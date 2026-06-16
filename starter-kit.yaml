@@ -8,3 +8,10 @@ export_paths:
   - public/build
   - package.json
   - vite.config.js
+dependencies:
+  marcorieser/tailwind-merge-statamic: ^2.0
+modules:
+  seo:
+    prompt: 'Would you like some awesome SEO with that!?'
+    dependencies:
+      statamic/seo-pro: ^7.11
