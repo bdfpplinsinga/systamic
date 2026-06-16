@@ -13,6 +13,6 @@ dependencies:
   marcorieser/tailwind-merge-statamic: ^2.0
 modules:
   seo:
-    prompt: 'Would you like some awesome SEO with that!?'
+    prompt: 'Would you like to install SEO Pro?'
     dependencies:
       statamic/seo-pro: ^7.11
