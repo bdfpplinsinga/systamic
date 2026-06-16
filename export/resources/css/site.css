@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import "./typography.css";
+@source "../views";
+@source "../../content";
+
+@theme {
+    --font-sans: 'Manrope Variable', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-headings: 'Geist Variable', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --color-brand-primary: oklch(0.67 0.22 34.95);
+    --color-brand-secondary: oklch(0.96 0.02 79.10);
+}
