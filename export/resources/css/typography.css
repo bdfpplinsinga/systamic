@@ -1,0 +1,10 @@
+@plugin "@tailwindcss/typography";
+
+
+@layer utilities {
+    .prose {
+        h2 {
+            margin-bottom: 1rem;
+        }
+    }
+}

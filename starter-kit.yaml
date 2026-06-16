@@ -3,7 +3,8 @@ export_paths:
   - config/filesystems.php
   - config/statamic/assets.php
   - resources/blueprints
-  - resources/css/site.css
+  - resources/css
+  - resources/js
   - resources/views
   - resources/svg
   - public/build
