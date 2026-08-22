@@ -6,7 +6,7 @@
         "build": "vite build",
         "dev": "vite",
         "watch": "vite",
-        "exportkit": "php please starter-kit:export ../systamic --clear"
+        "export": "php please starter-kit:export ../systamic --clear"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.16",

@@ -1,0 +1,10 @@
+tree:
+  - id: cc122fce-a5be-4800-9409-5fe5c40b93a0
+    title: Home
+    url: /
+  - title: Diensten
+    url: /diensten
+  - title: Projecten
+    url: /projecten
+  - title: Contact
+    url: /contact

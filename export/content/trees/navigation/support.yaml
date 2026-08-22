@@ -1,0 +1,7 @@
+tree:
+  - title: Submit ticket
+    url: /support
+  - title: Documentation
+    url: /documentation
+  - title: Guides
+    url: /guides

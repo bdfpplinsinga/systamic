@@ -1,0 +1,11 @@
+tree:
+  - title: Marketing
+    url: /marketing
+  - title: Analytics
+    url: /analytics
+  - title: Automation
+    url: /automation
+  - title: Commerce
+    url: /commerce
+  - title: Insights
+    url: /insights
