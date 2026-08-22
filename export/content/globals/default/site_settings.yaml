@@ -1,0 +1,21 @@
+company_name: 'Buro Toast'
+social_links:
+  - id: iFpMjZre6aqEFMU1BFlp4
+    label: Facebook
+    url: 'https://facebook.com'
+  - id: BV3VjYwrT36p7nNycWSjQ
+    label: Instagram
+    url: 'https://instagram.com'
+  - id: XgxHg5lx3gv-neQW66zDp
+    label: x
+    url: 'https://x.com'
+  - id: EQ-Z8-t99p1nof1XcFI7a
+    label: Github
+    url: 'https://github.com'
+  - id: YGhfqR8rKzagfKRDqosie
+    label: Youtube
+    url: 'https://youtube.com'
+footer_heading: 'Making the world a better place through constructing elegant hierarchies.'
+footer_show_company_details: true
+logo: acme-logo.svg
+logo_footer: acme-logo-2.svg

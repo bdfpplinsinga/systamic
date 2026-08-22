@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "tailwindcss-debug-screens";
 @import "./typography.css";
 @source "../views";
 @source "../../content";

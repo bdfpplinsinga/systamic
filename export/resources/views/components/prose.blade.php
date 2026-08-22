@@ -1,28 +1,18 @@
 @props([
     'size' => 'base',
-    'color' => 'default',
     'base' => [
-        'prose prose-headings:font-black prose-headings:uppercase prose-headings:font-sans-condensed prose-headings:tracking-tight prose-headings:leading-none',
+        'prose max-w-none',
     ],
     'sizes' => [
-        'xl' => 'prose-xl',
+        'sm' => 'prose-sm',
+        'base' => 'prose',
         'lg' => 'prose-lg',
-        'base' => '',
-    ],
-    'colors' => [
-        'default' =>
-            '',
-        'gray' =>
-            '',
-        'light-gray' =>
-            '',
-        'white' =>
-            '',
+        'xl' => 'prose-xl',
     ],
 ])
 
 @php
-    $classes = implode(' ', array_merge($base, [$sizes[$size], $colors[$color]]));
+    $classes = implode(' ', array_merge($base, [$sizes[$size]]));
 @endphp
 
 

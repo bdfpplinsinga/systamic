@@ -8,9 +8,9 @@
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
         {{ seo_pro:meta }}
     </head>
-    <body class="bg-zinc-100 dark:bg-zinc-900 font-sans leading-normal text-zinc-800 dark:text-zinc-400">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
-            {{ template_content }}
-        </div>
+    <body class="debug-screens bg-zinc-100 dark:bg-zinc-900 font-sans leading-normal text-zinc-800 dark:text-zinc-400">
+        {{ partial:header }}
+        {{ partial:main }}
+        {{ partial:footer }}
     </body>
 </html>

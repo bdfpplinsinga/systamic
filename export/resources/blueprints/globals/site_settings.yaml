@@ -1,0 +1,175 @@
+title: Site-instellingen
+tabs:
+  company:
+    display: Bedrijfsgegevens
+    sections:
+      -
+        display: Identiteit
+        instructions: 'Algemene gegevens van de organisatie, centraal beschikbaar in alle templates.'
+        fields:
+          -
+            handle: company_name
+            field:
+              type: text
+              display: Bedrijfsnaam
+              validate:
+                - required
+          -
+            handle: legal_name
+            field:
+              type: text
+              display: 'Juridische naam'
+              instructions: 'De officiële handelsnaam, indien deze afwijkt van de bedrijfsnaam.'
+          -
+            handle: chamber_of_commerce_number
+            field:
+              type: text
+              display: KvK-nummer
+              width: 50
+          -
+            handle: vat_number
+            field:
+              type: text
+              display: Btw-nummer
+              width: 50
+          -
+            handle: iban
+            field:
+              type: text
+              display: IBAN
+              width: 50
+          -
+            handle: bic
+            field:
+              type: text
+              display: BIC
+              width: 50
+  contact:
+    display: 'Contact & adres'
+    sections:
+      -
+        display: Contactgegevens
+        fields:
+          -
+            handle: email
+            field:
+              type: text
+              input_type: email
+              display: E-mailadres
+              width: 50
+              validate:
+                - nullable
+                - email
+          -
+            handle: phone
+            field:
+              type: text
+              input_type: tel
+              display: Telefoonnummer
+              width: 50
+      -
+        display: Adres
+        fields:
+          -
+            handle: street
+            field:
+              type: text
+              display: Straat
+              width: 66
+          -
+            handle: house_number
+            field:
+              type: text
+              display: Huisnummer
+              width: 33
+          -
+            handle: postal_code
+            field:
+              type: text
+              display: Postcode
+              width: 33
+          -
+            handle: city
+            field:
+              type: text
+              display: Plaats
+              width: 66
+          -
+            handle: country
+            field:
+              type: text
+              display: Land
+  socials:
+    display: 'Social media'
+    sections:
+      -
+        display: 'Social links'
+        instructions: 'Voeg alleen de kanalen toe die je wilt tonen. De volgorde is aanpasbaar.'
+        fields:
+          -
+            handle: social_links
+            field:
+              type: grid
+              display: 'Social links'
+              add_row: 'Social link toevoegen'
+              fields:
+                -
+                  handle: label
+                  field:
+                    type: text
+                    display: Naam
+                    placeholder: Instagram
+                    width: 33
+                    validate:
+                      - required
+                -
+                  handle: url
+                  field:
+                    type: link
+                    display: Link
+                    width: 66
+                    validate:
+                      - required
+  footer:
+    display: Footer
+    sections:
+      -
+        display: 'Uitgelicht blok'
+        fields:
+          -
+            handle: footer_heading
+            field:
+              type: textarea
+              display: Koptekst
+              character_limit: 120
+              validate:
+                - required
+      -
+        display: 'Onderste balk'
+        fields:
+          -
+            handle: footer_show_company_details
+            field:
+              type: toggle
+              display: 'Toon bedrijfsgegevens'
+              default: true
+  logos:
+    display: Logos
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: logo
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: Logo
+          -
+            handle: logo_footer
+            field:
+              container: assets
+              max_files: 1
+              type: assets
+              display: 'Logo Footer'
