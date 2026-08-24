@@ -5,7 +5,26 @@ title: Home
 template: home
 author: efdf6aff-0c34-41b2-a71c-e13ae44c9f66
 updated_by: efdf6aff-0c34-41b2-a71c-e13ae44c9f66
-updated_at: 1787413846
+updated_at: 1787495862
+page_builder:
+  - id: DI74NFF5Salbdp1vXZap9
+    type: hero
+    enabled: true
+  - id: wfpyi5mQ9FXvpcsqJGRYm
+    type: call_to_action
+    enabled: true
+  - id: fmlpNsJXfc5CqRyiqaPXU
+    type: media_text
+    enabled: true
+  - id: B4cQJsxzikTyqCwzvJRFd
+    type: video
+    enabled: true
+  - id: Us-CNVRYoRvvw1wyV7tpL
+    type: image
+    enabled: true
+  - id: uxTubQXgyUG0p71J8wwY0
+    type: gallery
+    enabled: true
 ---
 ## Welcome to your brand new Statamic site!
 

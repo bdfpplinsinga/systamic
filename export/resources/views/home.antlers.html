@@ -2,6 +2,14 @@
     {{ content | widont }}
 </article>
 
+{{ page_builder scope="block" }}
+    {{ partial src="block/{type}" }}
+{{ /page_builder }}
+
+
+
+
+
 <x-heading class="">We kunnen veel, maar hierin zijn we op  ons best.</x-heading>
 
 <x-button icon="arrow-right">hallo</x-button>

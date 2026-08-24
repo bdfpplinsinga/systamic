@@ -10,3 +10,10 @@
     --color-brand-primary: oklch(0.67 0.22 34.95);
     --color-brand-secondary: oklch(0.96 0.02 79.10);
 }
+
+@layer components {
+    .base-grid {
+        display: grid;
+        grid-template-columns: calc(50vw - 45rem) 3.75rem repeat(12,1fr) 3.75rem calc(50vw - 45rem);
+    }
+}

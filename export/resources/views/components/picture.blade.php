@@ -3,6 +3,7 @@
     'alt' => null,
     'sizes' => '100vw',
     'cover' => false,
+    'picture_class' => '',
     'lazy' => false,
     'presets' => ['xs', 'sm', 'md', 'lg', 'xl', '2xl'],
     'fallbackPreset' => 'lg',
