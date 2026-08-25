@@ -3,9 +3,11 @@ export_paths:
   - config/filesystems.php
   - config/statamic/assets.php
   - resources/blueprints
-  - resources/css/site.css
+  - resources/css
   - resources/views
   - resources/svg
+  - resources/js
+  - resources/fieldsets
   - public/build
   - package.json
   - vite.config.js

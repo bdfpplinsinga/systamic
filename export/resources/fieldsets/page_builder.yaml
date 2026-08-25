@@ -1,0 +1,40 @@
+title: 'Page builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      localizable: true
+      hide_display: true
+      collapse: true
+      listable: false
+      display: 'Page builder'
+      button_label: 'Add block'
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            hero:
+              display: Hero
+              fields:
+                - import: block_hero
+            call_to_action:
+              display: 'Call to action'
+              fields:
+                - import: block_cta
+            media_text:
+              display: 'Media & text'
+              fields:
+                - import: block_media_text
+            video:
+              display: Video
+              fields:
+                - import: block_video
+            image:
+              display: Image
+              fields:
+                - import: block_image
+            gallery:
+              display: Gallery
+              fields:
+                - import: block_gallery
