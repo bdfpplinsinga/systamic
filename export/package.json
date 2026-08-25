@@ -20,6 +20,7 @@
     "dependencies": {
         "@fontsource-variable/geist": "^5.2.9",
         "@fontsource-variable/manrope": "^5.2.8",
-        "@tailwindplus/elements": "^1.0.22"
+        "@tailwindplus/elements": "^1.0.22",
+        "alpinejs": "^3.16.3"
     }
 }

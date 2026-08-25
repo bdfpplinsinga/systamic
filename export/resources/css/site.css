@@ -11,9 +11,34 @@
     --color-brand-secondary: oklch(0.96 0.02 79.10);
 }
 
+@layer base {
+    /* Used to hide alpine elements before being rendered. */
+    [x-cloak] {
+        display: none !important;
+    }
+
+    /* Better UX. */
+    button {
+        cursor: pointer;
+    }
+}
+
 @layer components {
     .base-grid {
         display: grid;
-        grid-template-columns: calc(50vw - 45rem) 3.75rem repeat(12,1fr) 3.75rem calc(50vw - 45rem);
+        grid-template-columns: 0rem 1rem repeat(12, minmax(0, 1fr)) 1rem 0rem;
+        min-width: 0;
+    }
+
+    @media (min-width: 48rem) {
+        .base-grid {
+            grid-template-columns: 0rem 1.5rem repeat(12, minmax(0, 1fr)) 1.5rem 0rem;
+        }
+    }
+
+    @media (min-width: 90rem) {
+        .base-grid {
+            grid-template-columns: calc(50vw - 45rem) 3.75rem repeat(12, minmax(0, 1fr)) 3.75rem calc(50vw - 45rem);
+        }
     }
 }
