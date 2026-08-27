@@ -1,0 +1,16 @@
+{{ size = size ?? "base" }}
+{{ base = "prose max-w-none" }}
+
+{{ if size == "sm" }}
+    {{ size_class = "prose-sm" }}
+{{ elseif size == "lg" }}
+    {{ size_class = "prose-lg" }}
+{{ elseif size == "xl" }}
+    {{ size_class = "prose-xl" }}
+{{ else }}
+    {{ size_class = "prose" }}
+{{ /if }}
+
+<div class="{{ [base, size_class, class] | tw_merge }}">
+    {{ slot }}
+</div>

@@ -1,0 +1,25 @@
+{{ size = size ?? "h2" }}
+{{ tag = as ?? "h2" }}
+{{ base = "font-headings text-balance tracking-tight font-bold" }}
+
+
+{{ if size == "jumbo" }}
+    {{ size_class = "xl:text-8xl lg:text-7xl md:text-6xl text-5xl" }}
+{{ elseif size == "h1" }}
+    {{ size_class = "xl:text-7xl lg:text-6xl md:text-5xl text-3xl" }}
+{{ elseif size == "h3" }}
+    {{ size_class = "md:text-4xl text-3xl" }}
+{{ elseif size == "h4" }}
+    {{ size_class = "md:text-3xl text-2xl" }}
+{{ elseif size == "h5" }}
+    {{ size_class = "md:text-2xl text-xl" }}
+{{ elseif size == "h6" }}
+    {{ size_class = "text-xl" }}
+{{ else }}
+    {{ size_class = "lg:text-5xl md:text-4xl text-3xl" }}
+{{ /if }}
+
+
+<{{ tag }} class="{{ [base, size_class, class] | tw_merge }}">
+    {{ slot }}
+</{{ tag }}>

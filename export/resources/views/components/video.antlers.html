@@ -1,0 +1,31 @@
+{{ url = videoUrl }}
+{{ url = url | trim }}
+{{ base = base ?? "w-full" }}
+{{ embed_url = url | embed_url }}
+{{ is_embeddable = url | is_embeddable }}
+
+{{ if url }}
+    <figure class="{{ [base, class] | tw_merge }}">
+        <div class="aspect-video overflow-hidden rounded-lg bg-black">
+            {{ if is_embeddable }}
+                <iframe
+                    class="size-full"
+                    src="{{ embed_url }}"
+                    title="{{ caption ?? 'Video' }}"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+            {{ else }}
+                <video class="size-full" controls preload="metadata">
+                    <source src="{{ url }}" type="video/mp4">
+                    Je browser ondersteunt geen HTML5-video.
+                </video>
+            {{ /if }}
+        </div>
+
+        {{ if caption }}
+            <figcaption class="mt-3 text-sm text-gray-600">{{ caption }}</figcaption>
+        {{ /if }}
+    </figure>
+{{ /if }}

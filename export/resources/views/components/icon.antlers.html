@@ -1,0 +1,36 @@
+{{ base = "shrink-0" }}
+{{ icon_resolution = icon_resolution ?? 16 }}
+{{ icon_style = icon_style ?? "solid" }}
+{{ size = size ?? 'md' }}
+{{ label = label ?? null }}
+
+{{ if label }}
+    {{ aria_hidden = "false" }}
+    {{ role = "img" }}
+{{ else }}
+    {{ aria_hidden = "true" }}
+    {{ role = null }}
+{{ /if }}
+
+{{ if size == "sm" }}
+    {{ size_class = "size-4" }}
+{{ elseif size == "md" }}
+    {{ size_class = "size-5" }}
+{{ elseif size == "lg" }}
+    {{ size_class = "size-6" }}
+{{ elseif size == "xl" }}
+    {{ size_class = "size-8" }}
+{{ else }}
+    {{ size_class = size }}
+{{ /if }}
+
+{{ src = "icons/{icon_resolution}/{icon_style}/{name}" }}
+
+{{ svg
+    :src="src"
+    class="{{ [base, size_class, class] | tw_merge }}"
+    :title="label"
+    :aria-label="label"
+    :aria-hidden="aria_hidden"
+    :role="role"
+}}

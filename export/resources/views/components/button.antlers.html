@@ -1,0 +1,41 @@
+{{ base = "inline-flex items-center justify-center font-semibold rounded-full group transition-all duration-300 ease-in-out outline-1 outline-transparent -outline-offset-1 px-6 py-3 text-base leading-5"}}
+
+{{ if variant == "secondary" }}
+    {{ variant_class = "bg-brand-secondary 
+        text-brand-primary 
+        outline-brand-secondary 
+        hover:text-brand-secondary 
+        hover:bg-brand-primary 
+        hover:outline-brand-primary" }}
+{{ elseif variant == "ghost" }}
+    {{ variant_class = "bg-transparent
+        text-brand-primary
+        outline-brand-primary
+        hover:bg-brand-primary
+        hover:text-brand-secondary
+        hover:outline-brand-primary" }}
+{{ elseif variant == "link" }}
+    {{ variant_class = "bg-transparent
+        px-0
+        py-0
+        text-brand-primary
+        underline
+        underline-offset-4
+        decoration-2
+        decoration-transparent
+        hover:text-brand-primary
+        hover:decoration-brand-primary
+        focus-visible:outline-brand-primary" }}
+{{ else }}
+    {{ variant_class = "bg-brand-primary 
+        text-brand-secondary 
+        outline-brand-primary 
+        hover:text-brand-primary 
+        hover:bg-brand-secondary 
+        hover:outline-brand-secondary" }}
+{{ /if }}
+
+
+<a href="{{ href }}" class="{{ [base, variant_class, class] | tw_merge }}">
+    {{ slot }}
+</a>

@@ -1,0 +1,28 @@
+{{ partial:section class="isolate bg-white my-0" }}
+
+    {{ partial:container class="lg:grid lg:grid-cols-12 lg:gap-x-8" }}
+
+        <div class="pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:pt-40 lg:pb-48 xl:col-span-6">
+    
+            <x-heading as="h1">Deploy to the cloud with confidence</x-heading>
+            <x-prose size="lg" class="mt-8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+                cupidatat commodo. Elit sunt
+                amet fugiat veniam occaecat.</x-prose>
+            <div class="mt-10 flex items-center gap-x-6">
+                <x-button>Get started</x-button>
+                <x-button variant="secondary">Learn more</x-button>
+                <x-button variant="ghost">Ghost Button</x-button>
+                <x-button variant="link">Link Button</x-button>
+            </div>
+          
+        </div>
+
+        <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
+            <x-picture cover="true"
+                class="aspect-3/2 w-full bg-gray-50 object-cover lg:absolute lg:inset-0 lg:aspect-auto lg:h-full"
+                image="https://images.unsplash.com/photo-1773332611573-5e5bfa8e5de5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            />
+        </div>
+
+    {{ /partial:container }}
+{{ /partial:section }}
