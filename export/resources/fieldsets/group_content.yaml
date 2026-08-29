@@ -1,0 +1,25 @@
+title: 'Group - Content'
+fields:
+  -
+    handle: eyebrow_text
+    field:
+      type: text
+      display: 'Eyebrow Text'
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: description
+    field:
+      buttons:
+        - bold
+        - italic
+        - removeformat
+        - anchor
+      fullscreen: false
+      remove_empty_nodes: false
+      collapse: true
+      type: bard
+      display: Description

@@ -36,6 +36,6 @@
 {{ /if }}
 
 
-<a href="{{ href }}" class="{{ [base, variant_class, class] | tw_merge }}">
+<a href="{{ href }}" {{ if href | is_external_url }} target="_blank" {{/if}} class="{{ [base, variant_class, class] | tw_merge }}">
     {{ slot }}
 </a>

@@ -1,2 +1,4 @@
 title: 'Block - Call to action'
-fields: {}
+fields: 
+  - import: group_content
+  - import: buttons

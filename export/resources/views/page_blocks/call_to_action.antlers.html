@@ -1,13 +1,13 @@
 {{ partial:section class="my-8 bg-green-50" }}
     {{ partial:container class="py-24 sm:py-32"}}      
-        <x-heading class="max-w-2xl">Boost your productivity. Start using our app today.</x-heading>
-        <x-prose class="max-w-2xl mt-8">CTA introductietekst. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolor dicta dolores magnam dignissimos corporis. Quaerat natus accusamus inventore id ducimus! Dicta at dolor iste voluptas eum omnis nobis libero.</x-prose>
+        <x-heading class="max-w-2xl">{{heading}}</x-heading>
+        <x-prose class="max-w-2xl mt-8">{{description}}</x-prose>
         <div class="mt-10 flex items-center gap-x-6">
-            <x-button>
-                Get started  
-                <x-icon name="chevron-right"/>
-            </x-button>
-            <x-button variant="secondary">Learn more</x-button>
+           {{ buttons}}
+                <x-button variant="{{variant}}" href="{{link}}">
+                    {{label}}
+                </x-button>
+            {{ /buttons}}
         </div>
     {{ /partial:container }}    
 {{ /partial:section }}

@@ -5,17 +5,75 @@ title: Home
 template: home
 author: efdf6aff-0c34-41b2-a71c-e13ae44c9f66
 updated_by: efdf6aff-0c34-41b2-a71c-e13ae44c9f66
-updated_at: 1787495862
+updated_at: 1787935661
 page_builder:
-  - id: DI74NFF5Salbdp1vXZap9
+  -
+    id: DI74NFF5Salbdp1vXZap9
     type: hero
     enabled: true
-  - id: wfpyi5mQ9FXvpcsqJGRYm
+    heading: 'Deploy to the cloud with confidence'
+    heading_tag: h1
+    buttons:
+      - id: RPMWxDHFuTzeNCnZSTzSB
+        label: 'Get started'
+        link: 'https://nu.nl'
+        variant: secondary
+        target_blank: false
+        type: button
+        enabled: true
+      - id: 7u9sVHy0CuQ4NAhLaAFN4
+        label: 'Get started'
+        link: 'entry::home'
+        variant: ghost
+        target_blank: false
+        type: button
+        enabled: true
+    image: e7f691a4f74bd174e63cc75a363dee668d829336.jpg
+    size: md
+    caption: asdasdasd
+    description:
+      -
+        type: paragraph
+        content:
+          - type: text
+            text: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.'
+  -
+    id: wfpyi5mQ9FXvpcsqJGRYm
     type: call_to_action
     enabled: true
-  - id: fmlpNsJXfc5CqRyiqaPXU
+    heading: 'Boost your productivity. Start using our app today.'
+    description:
+      -
+        type: paragraph
+        content:
+          - type: text
+            text: 'CTA introductietekst. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolor dicta dolores magnam dignissimos corporis. Quaerat natus accusamus inventore id ducimus! Dicta at dolor iste voluptas eum omnis nobis libero.'
+    buttons:
+      - id: gp5E4DbHFdUEhz7F_bovE
+        label: 'Learn more'
+        variant: primary
+        link: 'https://nu.nl'
+        type: button
+        enabled: true
+  -
+    id: fmlpNsJXfc5CqRyiqaPXU
     type: media_text
     enabled: true
+    heading: 'Media Text Titel'
+    description:
+      -
+        type: paragraph
+        content:
+          - type: text
+            text: 'Media Text introductietekst. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolor dicta dolores magnam dignissimos corporis. Quaerat natus accusamus inventore id ducimus! Dicta at dolor iste voluptas eum omnis nobis libero.'
+    buttons:
+      - id: tOaVPBiO6bUuWEZ3bHhVE
+        label: 'Meer weten?'
+        variant: ghost
+        link: 'https://nu.nl'
+        type: button
+        enabled: true
+    image: e7f691a4f74bd174e63cc75a363dee668d829336.jpg
   - id: B4cQJsxzikTyqCwzvJRFd
     type: video
     enabled: true

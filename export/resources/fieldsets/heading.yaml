@@ -1,0 +1,27 @@
+title: Heading
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+      localizable: true
+      listable: false
+      validate:
+        - required
+  -
+    handle: heading_tag
+    field:
+      type: select
+      display: 'Heading tag'
+      instructions: 'Kies de HTML-tag voor deze heading.'
+      options:
+        h1: H1
+        h2: H2
+        h3: H3
+        h4: H4
+        h5: H5
+        h6: H6
+      default: h2
+      localizable: true
+      listable: false

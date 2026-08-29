@@ -1,2 +1,11 @@
 title: 'Block - Hero'
-fields: {}
+fields:
+  - import: group_content
+  - import: buttons
+  -
+    handle: image
+    field:
+      container: assets
+      max_files: 1
+      type: assets
+      display: Image

@@ -1,4 +1,4 @@
-{{ if image | is_url }}
+{{ if image | is_external_url }}
     <picture class="{{ pictureClass }}">
         <img
             class="{{ if cover }}object-cover w-full h-full {{ /if }}{{ class }}"
