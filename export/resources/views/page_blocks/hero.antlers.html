@@ -4,12 +4,13 @@
 
         <div class="pt-10 pb-24 sm:pb-32 lg:col-span-7 lg:pt-40 lg:pb-48 xl:col-span-6">
     
-            <x-heading as="{{heading_tag}}">{{heading}}</x-heading>
+            <x-heading as="h3" size="6xl">{{heading}}</x-heading>
             <x-prose size="lg" class="mt-8">{{description}}</x-prose>
             <div class="mt-10 flex items-center gap-x-6">
                 {{ buttons}}
                     <x-button variant="{{variant}}" href="{{link}}">
                         {{label}}
+                        <x-icon name="chevron-right"/>
                     </x-button>
                 {{ /buttons}}
                 

@@ -1,25 +1,16 @@
-{{ size = size ?? "h2" }}
-{{ tag = as ?? "h2" }}
 {{ base = "font-headings text-balance tracking-tight font-bold" }}
 
+{{ size_class = switch(
+    (size == "jumbo")   => "xl:text-9xl lg:text-8xl md:text-7xl text-6xl",
+    (size == "8xl")     => "xl:text-8xl lg:text-7xl md:text-6xl text-5xl",
+    (size == "7xl")     => "xl:text-7xl lg:text-6xl md:text-5xl text-4xl",
+    (size == "6xl")     => "xl:text-6xl lg:text-5xl md:text-4xl text-3xl",
+    (size == "5xl")     => "xl:text-5xl lg:text-4xl md:text-3xl text-2xl",
+    (size == "4xl")     => "xl:text-4xl lg:text-3xl md:text-2xl text-xl",
+    (size == "3xl")     => "xl:text-3xl lg:text-2xl md:text-xl text-lg",
+    ()                  => "xl:text-2xl lg:text-xl md:text-lg text-base"
+) }}
 
-{{ if size == "jumbo" }}
-    {{ size_class = "xl:text-8xl lg:text-7xl md:text-6xl text-5xl" }}
-{{ elseif size == "h1" }}
-    {{ size_class = "xl:text-7xl lg:text-6xl md:text-5xl text-3xl" }}
-{{ elseif size == "h3" }}
-    {{ size_class = "md:text-4xl text-3xl" }}
-{{ elseif size == "h4" }}
-    {{ size_class = "md:text-3xl text-2xl" }}
-{{ elseif size == "h5" }}
-    {{ size_class = "md:text-2xl text-xl" }}
-{{ elseif size == "h6" }}
-    {{ size_class = "text-xl" }}
-{{ else }}
-    {{ size_class = "lg:text-5xl md:text-4xl text-3xl" }}
-{{ /if }}
-
-
-<{{ tag }} class="{{ [base, size_class, class] | tw_merge }}">
+<{{ as ?? 'h2' }} class="{{ [base, size_class, class] | tw_merge }}">
     {{ slot }}
-</{{ tag }}>
+</{{ as ?? 'h2' }}>

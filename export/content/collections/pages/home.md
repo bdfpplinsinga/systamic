@@ -5,7 +5,7 @@ title: Home
 template: home
 author: efdf6aff-0c34-41b2-a71c-e13ae44c9f66
 updated_by: efdf6aff-0c34-41b2-a71c-e13ae44c9f66
-updated_at: 1787935661
+updated_at: 1788021609
 page_builder:
   -
     id: DI74NFF5Salbdp1vXZap9

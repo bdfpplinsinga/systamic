@@ -1,7 +1,6 @@
 {{ base = "shrink-0" }}
 {{ icon_resolution = icon_resolution ?? 16 }}
 {{ icon_style = icon_style ?? "solid" }}
-{{ size = size ?? 'md' }}
 {{ label = label ?? null }}
 
 {{ if label }}
@@ -12,17 +11,12 @@
     {{ role = null }}
 {{ /if }}
 
-{{ if size == "sm" }}
-    {{ size_class = "size-4" }}
-{{ elseif size == "md" }}
-    {{ size_class = "size-5" }}
-{{ elseif size == "lg" }}
-    {{ size_class = "size-6" }}
-{{ elseif size == "xl" }}
-    {{ size_class = "size-8" }}
-{{ else }}
-    {{ size_class = size }}
-{{ /if }}
+{{ size_class = switch(
+    (size == "sm") => "size-4",
+    (size == "lg") => "size-6",
+    (size == "xl") => "size-8",
+    ()             => "size-5"
+) }}
 
 {{ src = "icons/{icon_resolution}/{icon_style}/{name}" }}
 
